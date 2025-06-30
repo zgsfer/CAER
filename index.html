@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <title>Context-Aware Academic Emotion Dataset and Benchmark</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.svg">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+
+  <!-- UPDATED STYLE: For best practice, move this to your static/css/index.css file -->
+  <style>
+    .publication-venue {
+      /* Remove old badge styles */
+      background-color: transparent;
+      padding: 0;
+      
+      /* Apply new styles from the "SIGGRAPH 2025" image */
+      color: #5e5e5e; /* A professional dark grey */
+      font-weight: 600; /* A solid, but not overly bold weight */
+      text-transform: uppercase; /* All capital letters */
+      letter-spacing: 1.5px;   /* Adds space between letters */
+      font-size: 1.1em;        /* Makes it slightly more prominent */
+      
+      /* Keep it as a block to respect the margin */
+      display: inline-block;
+      margin-top: 0.5rem;
+    }
+  </style>
+
+</head>
+<body>
+
+
+<section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Context-Aware Academic Emotion Dataset and Benchmark</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+                <span class="author-block">
+                  <a href="#" target="_blank">Luming Zhao</a><sup>*</sup>,</span>
+                  <span class="author-block">
+                    <a href="#" target="_blank">Jingwen Xuan</a><sup>*</sup>,
+                  </span>
+                  <span class="author-block"></span>
+                    <a href="#" target="_blank">Jiamin Lou</a>,
+                  </span>
+                  <span class="author-block"></span>
+                    <a href="#" target="_blank">Yonghui Yu</a>,
+                  </span>
+                  <span class="author-block">
+                    <a href="#" target="_blank">Wenwu Yang</a><sup>†</sup>,</span>
+                  </div>
+
+                  <!-- This HTML part remains the same, but the CSS will change its appearance -->
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">Zhejiang Gongshang University</span><br>
+                    <span class="publication-venue">ICCV 2025</span>
+                  </div>
+                  
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                      <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="#" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <span class="link-block">
+                      <a href="#" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/zgsfer/CLIP-CAER" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- Dataset  Link -->
+                <span class="link-block">
+                  <a href="https://zgsfer.github.io/RAER/" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-database"></i>
+                  </span>
+                  <span>Dataset</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Academic emotion analysis plays a crucial role in evaluating students' engagement and cognitive states during the learning process. This paper addresses the challenge of automatically recognizing academic emotions through facial expressions in real-world learning environments. While significant progress has been made in facial expression recognition for basic emotions, academic emotion recognition remains underexplored, largely due to the scarcity of publicly available datasets. To bridge this gap, we introduce RAER, a novel dataset comprising approximately 2,700 video clips collected from around 140 students in diverse, natural learning contexts such as classrooms, libraries, laboratories, and dormitories, covering both classroom sessions and individual study. Each clip was annotated independently by approximately ten annotators using two distinct sets of academic emotion labels with varying granularity, enhancing annotation consistency and reliability. To our knowledge, RAER is the first dataset capturing diverse natural learning scenarios. Observing that annotators naturally consider context cues—such as whether a student is looking at a phone or reading a book—alongside facial expressions, we propose CLIP-CAER (CLIP-based Context-aware Academic Emotion Recognition). Our method utilizes learnable text prompts within the vision-language model CLIP to effectively integrate facial expression and context cues from videos. Experimental results demonstrate that CLIP-CAER substantially outperforms state-of-the-art video-based facial expression recognition methods, which are primarily designed for basic emotions, emphasizing the crucial role of context in accurately recognizing academic emotions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!--BibTex citation -->
+<section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section>
+
+
+</body>
+</html>
