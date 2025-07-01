@@ -41,7 +41,11 @@
       /* Keep it as a block to respect the margin */
       display: inline-block;
       margin-top: 0.5rem;
+      font-size: xx-large;
     }
+    .author-affiliation {
+    font-size: 0.9em; /* 比默认字体稍小 */
+  }
   </style>
 
 </head>
@@ -58,27 +62,34 @@
               <!-- This HTML part remains the same, but the CSS will change its appearance -->
               <div class="is-size-5 publication-authors">
                 <span class="publication-venue">ICCV 2025</span><br>
-                <span class="author-block">Zhejiang Gongshang University, Zhejiang Yuexiu University</span>
+                <br>
               </div>
 
               <!-- Paper authors -->
                 <span class="author-block">
-                  <a href="mailto:23020100108@pop.zjgsu.edu.cn" target="_blank">Luming Zhao</a><sup>*</sup>,</span>
+                  <a href="mailto:23020100108@pop.zjgsu.edu.cn" target="_blank">Luming Zhao</a><sup>1*</sup>,</span>
                   <span class="author-block">
-                    <a href="mailto:1293573544@qq.com" target="_blank">Jingwen Xuan</a><sup>*</sup>,
+                    <a href="mailto:1293573544@qq.com" target="_blank">Jingwen Xuan</a><sup>1*</sup>,
                   </span>
                   <span class="author-block"></span>
-                    <a href="mailto:ljmuscy@gmail.com" target="_blank">Jiamin Lou</a>,
+                    <a href="mailto:ljmuscy@gmail.com" target="_blank">Jiamin Lou</a><sup>2</sup>,
                   </span>
                   <span class="author-block"></span>
-                    <a href="mailto:22020100099@pop.zjgsu.edu.cn" target="_blank">Yonghui Yu</a>,
+                    <a href="mailto:22020100099@pop.zjgsu.edu.cn" target="_blank">Yonghui Yu</a><sup>1</sup>,
                   </span>
                   <span class="author-block">
-                    <a href="mailto:wwyang@zjgsu.edu.cn" target="_blank">Wenwu Yang</a><sup>†</sup></span>
-                  </div>
+                    <a href="mailto:wwyang@zjgsu.edu.cn" target="_blank">Wenwu Yang</a><sup>1†</sup></span>
 
-          
+                    <br>
+                    <br>
+                    <span class="author-block author-affiliation"><sup>1</sup>Zhejiang Gongshang University</span>,
+                    <span class="author-block author-affiliation"><sup>2</sup>Zhejiang Yuexiu University</span><br>
+                    <span class="author-block author-affiliation"><sup>*</sup>Equal Contribution &nbsp&nbsp&nbsp&nbsp&nbsp <sup>†</sup>Corresponding Author</span>
+                  </div>
                   
+                
+                
+
                   <div class="column has-text-centered">
                     <div class="publication-links">
                       <!-- Arxiv PDF link -->
@@ -143,7 +154,12 @@
 <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@InProceedings{Zhao_2025_ICCV,
+    author    = {Zhao, Luming and Xuan, Jingwen and Lou, Jiamin and Yu, Yonghui and Yang, Wenwu},
+    title     = {Context-Aware Academic Emotion Dataset and Benchmark},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    year      = {2025}
+}</code></pre>
     </div>
 </section>
 
